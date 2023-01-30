@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,35%);
+}
+
+.box-left{
+    width: 90%;
+    height: auto;
+    border-radius: 10px 100px 10px 10px;
+    background-color: hsl(228, 56%, 26%);
+
+}
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    margin: 0 2rem;
+}
+.wrapper .logo{
+    margin-bottom: 2rem;
+}
+.wrapper .buttons {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.wrapper .buttons button{
+    background-color:  hsl(229, 57%, 11%);
+    border-radius: 10px;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+.wrapper .buttons button:nth-child(2),
+.wrapper .buttons button:nth-child(3){
+    margin-left: 20px;
+}
+
+.box-right{
+    width: 90%;
+    height: auto;
+    background-color: hsl(228, 56%, 26%);
+    margin-top:1.5rem ;
+    border-radius: 20px;
+
+
+}
+.box-right p{
+    color: white;
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+
+.box-right > p{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.box-right > p span{
+    font-weight: 700;
+}
+
+.bar{
+    width: 80%;
+    height: 20px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: hsl(229, 57%, 11%);
+}
+.bar .inside-bar{
+    width: 75%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    border: 3.5px solid hsl(229, 57%, 11%);
+    background-image: linear-gradient(to right,hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
+}
+.bar .inside-bar::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    right: 1%;
+    top: 2px;
+    background-color: white;
+}
+
+.storage-left{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0px;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+@media screen and (min-width: 750px){
+    
+    
+    .container{
+        flex-direction: row;
+        width: 90%;
+        top: 180px;
+    }
+    
+    .box-left{
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .box-right{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 962px){
+    body{
+        background-image: url(images/bg-desktop.png);
+        background-position: top 380px left 0px;
+        background-color: hsl(229, 57%, 11%) ;
+    }
+    
+    .container{
+        flex-direction: row;
+        width: 60%;
+        top: 200px;
+    }
+    
+    .box-left{
+        width: 50%;
+        margin-right: 2rem;
+    }
+
+    .box-right{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
